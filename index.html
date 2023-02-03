@@ -1,35 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
+    <title>HomePage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
 </head>
+
 <body>
     <header>
-        <h1><a class="aTituloPrinc" href="index.html">E-Commerce</a></h1>
-        <nav>     
-            <ul class="navUl">
-                <li><a class="navA" href="html/login.html">Login</a></li>
-                <li><a class="navA" href="html/novedades.html">Novedades</a></li>
-                <li><a class="navA" href="html/ofertas.html">Ofertas</a></li>
-                <li><a class="navA" href="html/preguntas.html">Preguntas</a></li>
-                <li><a class="navA" href="#pie">Redes Sociales</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="rowT">
+                <h1><a href="index.html">E-commerce</a></h1>
+            </div>
+            <div class="row">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Navegacion
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="navA" class="dropdown-item" href="html/login.html">Login</a></li>
+                        <li><a class="navA" class="dropdown-item" href="html/novedades.html">Novedades</a></li>
+                        <li><a class="navA" class="dropdown-item" href="html/ofertas.html">Ofertas</a></li>
+                        <li><a class="navA" class="dropdown-item" href="html/preguntas.html">Preguntas</a></li>
+                        <li><a class="navA" class="dropdown-item" href="#pie">Redes Sociales</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
         <h2>Inicio</h2>
-        <h3>Novedades</h3>
-        <div>  
-            <img src="img/imagenf1.jfif" alt="imagen no encontrada">
-            <img src="img/imagenf1.jfif" alt="imagen no encontrada">  
+        <div id="carouselExample" class="carousel slide" class="container-fluid">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/imagenf1.jfif" class="imgCar" alt="producto novedad 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/imagenf1.jfif" class="imgCar" alt="producto novedad 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/imagenf1.jfif" class="imgCar" alt="producto novedad 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <h3>Catalogo</h3>
+        <div class="grid2">
+            <section class="img1"><img src="img/imagenf1.jfif" alt="imagen no encontrada"></section>
+            <section class="img2"><img src="img/imagenf1.jfif" alt="imagen no encontrada"></section>
+            <section class="img3"><img src="img/imagenf1.jfif" alt="imagen no encontrada"></section>
+            <section class="img4"><img src="img/imagenf1.jfif" alt="imagen no encontrada"></section>
         </div>
     </main>
-    <footer id="pie">
+    <footer id="pie" class="container-fluid">
+        <hr />
         <h4>Todos los derechos reservados</h4>
         <ul>
             <li><a class="navA" href="https://www.instagram.com/">Instagram</a></li>
@@ -38,5 +76,9 @@
             <li><a class="navA" href="https://twitter.com/?lang=es">Twitter</a></li>
         </ul>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

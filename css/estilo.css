@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,100;1,200&display=swap');
 body{
     font-family: 'Sofia Sans', sans-serif;
-    background-color: #345270;
+    background-color: #4789ca;
 }
 h1 {
     text-align: center;
@@ -20,6 +20,44 @@ h3 {
     font-size: 300%;
     text-transform: lowercase;
 }
+
+h4 {
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    "rowT rowT"
+    "dropdown dropdown";
+}
+
+.grid{
+    display: grid;
+    grid-template-areas: 
+    "placeUsuario"
+    "placePass"
+    "btn1";
+}
+
+.grid2{
+    display: grid;
+    grid-template-areas: 
+    "img1 img2"
+    "img3 img4";
+}
+
+.carouselExample {
+    width: auto;
+    display: flex;
+}
+
+.imgCar {
+    width: 10%;
+}
+
 .divPreguntas {
     margin-left: 40.5%;
     height: auto;

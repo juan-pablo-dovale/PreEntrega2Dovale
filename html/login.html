@@ -1,33 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LogIn</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo.css">
-    <link rel="icon" type="image/x-icon" href="../img/favicon.ico"/>
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico" />
 </head>
+
 <body>
     <header>
-        <h1><a class="aTituloPrinc" href="../index.html">E-Commerce</a></h1>
-        <nav>     
-            <ul class="navUl">
-                <li><a class="navA" href="login.html">Login</a></li>
-                <li><a class="navA" href="novedades.html">Novedades</a></li>
-                <li><a class="navA" href="ofertas.html">Ofertas</a></li>
-                <li><a class="navA" href="preguntas.html">Preguntas</a></li>
-                <li><a class="navA" href="#pie">Redes Sociales</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="rowT">
+                <h1><a href="index.html">E-commerce</a></h1>
+            </div>
+            <div class="row">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Navegacion
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="navA" class="dropdown-item" href="html/login.html">Login</a></li>
+                        <li><a class="navA" class="dropdown-item" href="html/novedades.html">Novedades</a></li>
+                        <li><a class="navA" class="dropdown-item" href="html/ofertas.html">Ofertas</a></li>
+                        <li><a class="navA" class="dropdown-item" href="html/preguntas.html">Preguntas</a></li>
+                        <li><a class="navA" class="dropdown-item" href="#pie">Redes Sociales</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
         <h2>Login</h2>
         <div class="login">
             <form id="loginform">
-                <li><input type="text" name="usuario" placeholder="Usuario" required>   </li>                
-                <li><input type="password" placeholder="Contraseña" name="password" required></li>               
-                <button class="btn1" type="submit" title="Ingresar" name="Ingresar">Login</button>
+                <div class="grid">
+                    <li><input class="placeUsuario" type="text" name="usuario" placeholder="Usuario" required> </li>
+                    <li><input class="placePass" type="password" placeholder="Contraseña" name="password" required></li>
+                    <button class="btn1" type="submit" title="Ingresar" name="Ingresar">Login</button>
+                </div>
             </form>
             <div>
                 <a class="navA" href="#">¿Perdiste tu contraseña?</a>
@@ -35,7 +51,8 @@
             </div>
         </div>
     </main>
-    <footer id="pie">
+    <footer id="pie" class="container-fluid">
+        <hr />
         <h4>Todos los derechos reservados</h4>
         <ul>
             <li><a class="navA" href="https://www.instagram.com/">Instagram</a></li>
@@ -44,5 +61,9 @@
             <li><a class="navA" href="https://twitter.com/?lang=es">Twitter</a></li>
         </ul>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
