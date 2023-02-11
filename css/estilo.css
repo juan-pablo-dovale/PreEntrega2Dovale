@@ -1,14 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,100;1,200&display=swap');
 body{
-    font-family: 'Sofia Sans', sans-serif;
-    background-color: #4789ca;
+    font-family: 'Sofia Sans';
+    background-color: #5e84aa;
 }
-h1 {
+.tituloP {
     text-align: center;
-    color:rgb(0, 0, 0);
+    color:rgb(160, 158, 21);
     font-style: italic;
-    font-size: 580%;
+    font-size: 10vw;
 }
+
+.tituloP2 {
+    text-align: center;
+    color:rgb(160, 158, 21);
+    font-style: italic;
+    font-size: 10vw;
+}
+
 h2 {
     color:rgb(0, 0, 0);
     text-align: center;
@@ -30,16 +38,60 @@ h4 {
 .container{
     display: grid;
     grid-template-areas: 
-    "rowT rowT"
-    "dropdown dropdown";
+    "titulo titulo combobox"
+    "titulo titulo combobox";
 }
 
 .grid{
     display: grid;
     grid-template-areas: 
-    "placeUsuario"
-    "placePass"
-    "btn1";
+    "titulo titulo combobox"
+    "titulo titulo combobox";
+}
+
+.gridL{
+    margin-left: 40%;
+    grid-template-areas: 
+    "usuario usuario"
+    "contras contras"
+    "btn btn"
+    "recup account";
+}
+
+.placeUsuario{
+    grid-area: usuario;
+}
+
+.placePass{
+    grid-area: contras;
+}
+
+.row{
+    grid-area: combobox;
+}
+
+.rowT{
+    grid-area: titulo;
+}
+
+.img1{
+    grid-area: img1;
+    width: 30%
+}
+
+.img2{
+    grid-area: img2;
+    width: 30%
+}
+
+.img3{
+    grid-area: img3;
+    width: 30%
+}
+
+.img4{
+    grid-area: img4;
+    width: 30%
 }
 
 .grid2{
@@ -47,22 +99,26 @@ h4 {
     grid-template-areas: 
     "img1 img2"
     "img3 img4";
+    row-gap: 60px;
 }
 
 .carouselExample {
-    width: auto;
     display: flex;
 }
 
 .imgCar {
-    width: 10%;
+    width: 27%;
+    height: auto;
+    margin-left: 37.5%;
 }
 
 .divPreguntas {
     margin-left: 40.5%;
     height: auto;
 }
- img {
+.imgCat {
+    width: 250%;
+    height: auto;
     margin-left: 44%;
  }
 .btn1{
@@ -74,6 +130,7 @@ h4 {
     background:#638cb5;
     border:0px;
     height: auto;
+    grid-area: btn;
 }
 .aTituloPrinc{
     text-transform: initial;
@@ -95,4 +152,18 @@ footer {
     font-weight: bold;
     color: #000000;
     text-decoration: none;
+    grid-area: recup ;
+}
+.navB{
+    text-transform: initial;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+    grid-area: account;
+}
+
+@media (max-width: 800px) {
+    .tittleLogin {font-size: 40px;}
+    .tituloP2{font-size: 80px;}
+    .grid{display: flex;}
 }
