@@ -3,6 +3,10 @@ body {
   background-color: #101b30;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .tituloP {
   font-family: "Roboto Slab", serif;
   text-align: center;
@@ -173,6 +177,10 @@ label {
   font-size: 120%;
   color: #3c4245;
   margin-top: 15px;
+}
+
+.aLogin {
+  text-decoration: none;
 }
 
 input {

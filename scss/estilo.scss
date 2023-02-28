@@ -17,6 +17,9 @@ $border-color_1: none;
 body {
 	background-color: $background-color_1;
 }
+body::-webkit-scrollbar {
+	display: none;
+}
 .tituloP {
 	font-family: $font-family_1;
 	text-align: center;
@@ -172,6 +175,9 @@ label {
 	font-size: 120%;
 	color: $color_6;
 	margin-top: 15px;
+}
+.aLogin{
+	text-decoration: none;
 }
 input {
 	font-family: $font-family_1;
