@@ -47,7 +47,6 @@ h2 {
 h3 {
 	color: $color_4;
 	text-align: center;
-	font-size: 300%;
 }
 h4 {
 	text-align: center;
@@ -60,6 +59,14 @@ span {
 	font-size: 10vw;
 	text-decoration: none;
 }
+
+.navA{
+	color: $color_5;
+	text-align: center;
+	text-decoration: none;
+	font-size: 100%;
+}
+
 hr {
 	color: $color_5;
 	border-width: 5px;
@@ -249,12 +256,17 @@ footer {
 .imgCat {
 	padding-left: 2.3%;
 	padding-right: 2.3%;
-	padding-bottom: 1.9%;
+	padding-bottom: 5%;
 	transition: 0.75s;
 	&:hover {
 		transform: scale(1.22);
 	}
 }
+
+.dropdown-menu{
+	background-color: $color_4;
+}
+
 .imgPerfil {
 	width: 150px;
 	height: 150px;
