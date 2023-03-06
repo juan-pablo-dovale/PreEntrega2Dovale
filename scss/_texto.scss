@@ -1,0 +1,72 @@
+.tituloP {
+	font-family: $font-family_1;
+	text-align: center;
+	color: $color_1;
+	font-size: 8.5vw;
+	text-decoration: none;
+}
+.tituloP2 {
+	text-align: center;
+	color: $color_2;
+	font-style: italic;
+	font-size: 10vw;
+}
+.aTituloPrinc {
+	text-transform: initial;
+	font-weight: bold;
+	color: $color_3;
+	text-decoration: underline;
+}
+h2 {
+	color: $color_4;
+	text-align: center;
+	font-size: 460%;
+}
+h3 {
+	text-decoration: none;
+	color: $color_4;
+	text-align: center;
+}
+h4 {
+	text-align: center;
+	color: $color_4;
+	font-weight: bold;
+}
+span {
+	font-family: $font-family_1;
+	color: $color_4;
+	font-size: 10vw;
+	text-decoration: none;
+}
+#dropdowns{
+	.navA{
+		color: $color_5;
+	}
+}
+.navA{
+	text-align: center;
+	text-decoration: none;
+	font-size: 100%;
+}
+hr {
+	color: $color_5;
+	border-width: 5px;
+}
+.label {
+	grid-area: label;
+}
+label {
+	display: block;
+	font-family: $font-family_1;
+	font-size: 120%;
+	color: $color_6;
+	margin-top: 15px;
+}
+.aLogin{
+	text-decoration: none;
+}
+#perfil{
+	a{
+		text-decoration: none;
+	}
+}
