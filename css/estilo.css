@@ -2,7 +2,7 @@
 .imgPerfil {
   width: 150px;
   height: 150px;
-  margin-bottom: 20%;
+  padding-right: 10px;
 }
 
 .imgCat {
@@ -23,6 +23,10 @@
 
 #favoritos .imgCat {
   padding: 1.5%;
+}
+
+#perfil .imgCat:hover {
+  transform: scale(1.1);
 }
 
 .tituloP {
@@ -60,6 +64,12 @@ h3 {
 }
 
 h4 {
+  text-align: left;
+  color: rgb(190, 70, 70);
+  font-weight: bold;
+}
+
+.h4Footer {
   text-align: center;
   color: rgb(190, 70, 70);
   font-weight: bold;
@@ -209,16 +219,60 @@ label {
   color: #000000;
 }
 
-.divPerfil {
-  display: block;
-}
-
 #derecho {
   text-align: center;
   width: 100%;
   filter: alpha(opacity=70);
   padding: 20px 20px 20px 50px;
   box-sizing: border-box;
+}
+
+h4 {
+  grid-area: h4;
+  width: auto;
+  font-size: 24px;
+}
+
+.imgPerfil {
+  grid-area: imgp;
+}
+
+.divPerfil {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, auto);
+  grid-gap: 10px;
+  grid-template-areas: "imgp imgp imgp" "h4imgp h4imgp h4imgp" "imgp1 imgp2 imgp3" "h4imgp1 h4imgp2 h4imgp3";
+  grid-template-rows: auto 1fr auto auto; /* add this */
+  justify-items: center;
+  align-items: center;
+}
+.divPerfil a {
+  text-decoration: none;
+}
+.divPerfil .imgP1 {
+  width: 50%;
+  grid-area: imgp1;
+}
+.divPerfil .imgP2 {
+  width: 50%;
+  grid-area: imgp2;
+}
+.divPerfil .imgP3 {
+  width: 50%;
+  grid-area: imgp3;
+}
+.divPerfil .h4imgp {
+  grid-area: h4imgp;
+}
+.divPerfil .h4imgp1 {
+  grid-area: h4imgp1;
+}
+.divPerfil .h4imgp2 {
+  grid-area: h4imgp2;
+}
+.divPerfil .h4imgp3 {
+  grid-area: h4imgp3;
 }
 
 body {
@@ -278,6 +332,12 @@ footer {
   }
   .grid {
     display: flex;
+  }
+  h4 {
+    font-size: 10px;
+  }
+  .imgPerfil {
+    transform: scale(0.5);
   }
 }
 

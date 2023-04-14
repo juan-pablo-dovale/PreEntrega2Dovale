@@ -1,7 +1,7 @@
 .imgPerfil {
 	width: 150px;
 	height: 150px;
-	margin-bottom: 20%;
+	padding-right: 10px;
 }
 .imgCat {
 	padding-left: 2%;
@@ -20,5 +20,12 @@
 #favoritos{
 	.imgCat{
 		padding: 1.5%;
+	}
+}
+#perfil{
+	.imgCat{
+		&:hover {
+			transform: scale(1.1);
+		}
 	}
 }
